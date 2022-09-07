@@ -1,9 +1,13 @@
-
+import Home from "./Component/Home";
+import Shop from './Component/Shop';
+import Checkout from './Component/Checkout';
 
 function App() {
   return (
     <div>
-      <h1>Title</h1>
+      <Home />
+      <Shop />
+      <Checkout />
     </div>
   );
 }
