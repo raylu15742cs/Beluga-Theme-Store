@@ -3,7 +3,6 @@
 }
 nav {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     min-height: 5vh;
     background-color: lightblue;
@@ -15,8 +14,22 @@ a {
 }
 .rightnav {
     width: 60vw;
+    padding-left: 10vw;
 }
 
 .shop {
     margin-right: 10vw;
+}
+
+img {
+    position: absolute;
+    top: 1vh;
+    right: 15vh;
+    height: 2.5vh;
+}
+
+.insidebox {
+    position: absolute;
+    top: 2vh;
+    right: 15.9vh;
 }
