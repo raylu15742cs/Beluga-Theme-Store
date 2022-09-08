@@ -2,7 +2,7 @@
 
 const Shop = () => {
   return (
-    <div>
+    <div className="shop">
       <h1>Shop</h1>
     </div>
   );
