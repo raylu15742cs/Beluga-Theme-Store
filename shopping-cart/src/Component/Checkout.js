@@ -1,24 +1,46 @@
+import { Link } from "react-router-dom";
 
-
-const Checkout = ({shopCart}) => {
+const Checkout = ({shopCart, clearScore}) => {
   if(Object.keys(shopCart).length >= 1) {
+    let totalitems =  Object.keys(shopCart).length 
       return (
         <div className="checkout">
+          <div className="checkoutitems">
+            <h1> Your Bag</h1>
+            {Object.keys(shopCart).map((key, i) => {
+              return (
+                <div className="item">
+                  <h1 key={key}>
+                    {shopCart[key][0]} size : {shopCart[key][1]}
+                  </h1>
+                </div>
+              );
+            })}
+          </div>
           <div>
-            { 
-              Object.keys(shopCart).map(( key ,i) => {
-                return(
-                  <h1 key={i}>{shopCart[key][0]} size : {shopCart[key][1]}</h1>
-                )
-              }) 
-            }
+            <div className="total">
+              <div className="lefttotal">
+                <h3> Order Summary</h3>
+                <p> Original Price</p>
+                <p> Number Items</p>
+                <p> Deliver </p>
+                <h3> Total </h3>
+              </div>
+              <div className="righttotal">
+                <p className="righttotalfirst"> 230</p>
+                <p> {totalitems}</p>
+                <p> Free</p>
+                <p> ${totalitems * 230}</p>
+              </div>
+            </div>
+            <button onClick={clearScore} className="checkoutbutton"> <Link to="/" >Checkout</Link></button>
           </div>
         </div>
       );
     
   } else {
     return (
-      <div className="checkout">
+      <div className="empty" >
         <h1>Shopping Cart is Empty</h1>
       </div>
     )

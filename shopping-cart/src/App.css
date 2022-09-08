@@ -27,14 +27,14 @@ a:any-link {
 
 .bag {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 30px;
     height: 30px;
 }
 
 .insidebox {
     position: absolute;
-    top: 20px;
+    top: 26px;
     right: 41px;
 }
 
@@ -52,7 +52,11 @@ a:any-link {
     height: 83vh;
 }
 .checkout {
-    height: 93vh;
+    min-height: 83vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    gap: 10vw;
 }
 
 .footer {
@@ -93,4 +97,43 @@ a:any-link {
 select {
     margin-top: 5vh;
     margin-right: 5vh;
+}
+.empty {
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+.item {
+    height: 200px;
+    width: 800px;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+.total {
+    width: 170px;
+    height: 200px;
+    border: 2px solid black;
+    margin-top : 30px;
+    display: flex;
+    padding: 10px;
+}
+.righttotal {
+    text-align: end;
+}
+.total h3 , .total p {
+    margin-bottom: 20px;
+}
+
+.righttotalfirst {
+    margin-top: calc(1.17em + 21px);
+}
+
+.checkoutbutton {
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
 }

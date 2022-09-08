@@ -10,7 +10,11 @@ const RouteSwitch = () => {
     const [score, setScore] = useState(0);
     const [shopCart , setShopCart] = useState({})
     const updatescore = () => {setScore(score+1)}
-
+    const clearScore = () => {
+      setScore(score-score)
+      Object.keys(shopCart).forEach((k) => delete shopCart[k])
+      console.log('clear')
+    }
     useEffect(() => {
       console.log(shopCart)
     })
@@ -20,7 +24,7 @@ const RouteSwitch = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop  score={score} setScore={updatescore} setShopCart={setShopCart} shopCart={shopCart}/>} />
-          <Route path="/checkout" element={<Checkout shopCart={shopCart} />} />
+          <Route path="/checkout" element={<Checkout shopCart={shopCart} clearScore={clearScore} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
