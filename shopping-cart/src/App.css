@@ -21,15 +21,23 @@ a {
     margin-right: 10vw;
 }
 
-img {
+.bag {
     position: absolute;
     top: 1vh;
     right: 15vh;
-    height: 2.5vh;
+    max-height: 2.5vh;
 }
 
 .insidebox {
     position: absolute;
     top: 2vh;
     right: 15.9vh;
+}
+
+.belugaimg {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    height: 30vh;
+    border: 2px solid black;
 }
