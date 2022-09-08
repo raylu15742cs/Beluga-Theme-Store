@@ -1,9 +1,9 @@
 
 
-const Checkout = () => {
+const Checkout = ({score}) => {
     return (
       <div className="checkout">
-        <h1>Checkout</h1>
+        <h1>{score}</h1>
       </div>
     );
 }

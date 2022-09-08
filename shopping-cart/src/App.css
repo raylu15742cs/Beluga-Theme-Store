@@ -48,7 +48,10 @@ a:any-link {
 .home {
     min-height: 58vh;
 }
-.checkout , .shop {
+.shop {
+    height: 83vh;
+}
+.checkout {
     height: 93vh;
 }
 
@@ -77,3 +80,13 @@ a:any-link {
     font-weight: bolder;
     border-radius: 10px;
 }   
+.shop {
+    display: flex;
+    margin-top: 10vh;
+}
+.shop img{
+    height: 50vh;
+}
+.shopinside {
+    padding-top: 10vh;
+}

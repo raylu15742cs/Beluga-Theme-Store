@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import {useState} from "react";
-const Nav = () => {
-    const [score , setScore] = useState(0)
+const Nav = ({ score , setScore}) => {
     return (
       <nav>
         <div className="rightnav">
@@ -9,8 +7,8 @@ const Nav = () => {
         </div>  
         <div className="leftnav">
             <Link to="/shop" className="shops">Shop</Link>
-            <Link onClick={()=> setScore(score+1)} to="/checkout"><img className="bag" src={require("../img/bag.png")} alt="hi"></img></Link>
-            <p onClick={()=> setScore(score+1)} className="insidebox">{score}</p>
+            <Link onClick={setScore} to="/checkout"><img onClick={setScore}  className="bag" src={require("../img/bag.png")} alt="hi"></img></Link>
+            <p onClick={setScore} className="insidebox">{score}</p>
         </div>
       </nav>
     );
