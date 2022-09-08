@@ -39,14 +39,17 @@ a:any-link {
 }
 
 .belugaimg {
-    position: absolute;
-    top: 20%;
-    right: 1%;
-    height: 50vh;
-
+    height: 30vh;
+}
+.leftsidehome {
+    padding-top: 11vh;
 }
 .home {
-    min-height: 58vh;
+    min-height: 73vh;
+    display: flex;
+    padding-top: 20vh;
+    gap: 5vw;
+    justify-content: center;
 }
 .shop {
     height: 83vh;
@@ -67,10 +70,6 @@ a:any-link {
     justify-content: center;
 }
 
-.home {
-    padding-left: 20vh;
-    padding-top: 35vh;
-}
 
 .home h1 {
     font-size: 50px;
@@ -87,9 +86,10 @@ a:any-link {
 .shop {
     display: flex;
     margin-top: 10vh;
+    justify-content: center;
 }
 .shop img{
-    height: 50vh;
+    height: 40vh;
 }
 .shopinside {
     padding-top: 10vh;
