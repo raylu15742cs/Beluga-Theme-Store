@@ -1,19 +1,23 @@
 * {
     margin: 0;
+    
+}
+body {
+    background-color: #e3e3e3;
 }
 nav {
     display: flex;
     align-items: center;
     min-height: 5vh;
-    background-color: lightblue;
+
 }
 
-a {
+a:any-link {
     text-decoration: none;
     color: black
 }
 .rightnav {
-    width: 60vw;
+    width: 75vw;
     padding-left: 10vw;
 }
 
@@ -24,32 +28,52 @@ a {
 .bag {
     position: absolute;
     top: 1vh;
-    right: 15vh;
+    right: 3vh;
     max-height: 2.5vh;
 }
 
 .insidebox {
     position: absolute;
     top: 2vh;
-    right: 15.9vh;
+    right: 3.94vh;
 }
 
 .belugaimg {
     position: absolute;
-    top: 30%;
-    right: 40%;
-    height: 30vh;
-    border: 2px solid black;
-}
+    top: 20%;
+    right: 1%;
+    height: 50vh;
 
-.home , .checkout , .shop {
-    min-height: 93vh;
+}
+.home {
+    min-height: 58vh;
+}
+.checkout , .shop {
+    height: 93vh;
 }
 
 .footer {
     min-height: 2vh;
     display: flex;
-    background-color: aliceblue;
+
     align-items: center;
     justify-content: center;
 }
+
+.home {
+    padding-left: 20vh;
+    padding-top: 35vh;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 2vh;
+}
+
+.home button {
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+}   
