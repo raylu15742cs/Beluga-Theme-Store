@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-const Nav = ({ score , setScore}) => {
+const Nav = ({ score }) => {
     return (
       <nav>
         <div className="rightnav">
@@ -7,8 +7,8 @@ const Nav = ({ score , setScore}) => {
         </div>  
         <div className="leftnav">
             <Link to="/shop" className="shops">Shop</Link>
-            <Link onClick={setScore} to="/checkout"><img onClick={setScore}  className="bag" src={require("../img/bag.png")} alt="hi"></img></Link>
-            <p onClick={setScore} className="insidebox">{score}</p>
+            <Link to="/checkout"><img className="bag" src={require("../img/bag.png")} alt="hi"></img></Link>
+            <p className="insidebox"><Link to="/checkout">{score}</Link></p>
         </div>
       </nav>
     );

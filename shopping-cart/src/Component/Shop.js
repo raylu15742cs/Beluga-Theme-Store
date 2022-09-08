@@ -1,10 +1,12 @@
 
 
-const Shop = ( { setShopCart ,setScore} ) => {
+const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
   const test = () => {
     let select = document.getElementById("language")
     var value = select.options[select.selectedIndex].value;
     console.log(`beluga ${value}`)
+
+    setShopCart({...shopCart , [score] : ["beluga", value]})
     setScore()
 
   }
@@ -12,6 +14,7 @@ const Shop = ( { setShopCart ,setScore} ) => {
     <div className="shop">
       <img src={require(`../img/beluga.png`)} alt="beluga"></img>
       <div className="shopinside">
+        <h1>Yeezy Beluga 350 V2</h1>
         <select id="language">
           <option value="5">5</option>
           <option value="6">6</option>

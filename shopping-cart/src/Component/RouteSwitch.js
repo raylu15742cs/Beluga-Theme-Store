@@ -4,19 +4,23 @@ import Home from './Home';
 import Shop from './Shop';
 import Nav from "./Nav"
 import Footer from "./Footer"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const RouteSwitch = () => {
     const [score, setScore] = useState(0);
-    
+    const [shopCart , setShopCart] = useState({})
     const updatescore = () => {setScore(score+1)}
+
+    useEffect(() => {
+      console.log(shopCart)
+    })
     return (
       <BrowserRouter>
         <Nav score={score} setScore={updatescore}/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop setScore={updatescore} />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/shop" element={<Shop  score={score} setScore={updatescore} setShopCart={setShopCart} shopCart={shopCart}/>} />
+          <Route path="/checkout" element={<Checkout shopCart={shopCart} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

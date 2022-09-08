@@ -27,15 +27,15 @@ a:any-link {
 
 .bag {
     position: absolute;
-    top: 1vh;
-    right: 3vh;
-    max-height: 2.5vh;
+    top: 10px;
+    right: 30px;
+    height: 30px;
 }
 
 .insidebox {
     position: absolute;
-    top: 2vh;
-    right: 3.94vh;
+    top: 20px;
+    right: 41px;
 }
 
 .belugaimg {
@@ -89,4 +89,8 @@ a:any-link {
 }
 .shopinside {
     padding-top: 10vh;
+}
+select {
+    margin-top: 5vh;
+    margin-right: 5vh;
 }
