@@ -1,4 +1,4 @@
-import { HashRouter, BrowserRouter, Routes, Route } from 'react-router-dom';
+import {HashRouter, Routes, Route } from 'react-router-dom';
 import Checkout from './Checkout';
 import Home from './Home';
 import Shop from './Shop';
@@ -19,17 +19,15 @@ const RouteSwitch = () => {
       console.log(shopCart)
     })
     return (
-      <BrowserRouter>
-        <HashRouter basename='/'>
+      <HashRouter basename="/">
           <Nav score={score} setScore={updatescore}/>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/shop" element={<Shop  score={score} setScore={updatescore} setShopCart={setShopCart} shopCart={shopCart}/>} />
             <Route path="/checkout" element={<Checkout shopCart={shopCart} clearScore={clearScore} />} />
           </Routes>
           <Footer />
-        </HashRouter>
-      </BrowserRouter>
+      </HashRouter>
     );
 }
 

@@ -40,7 +40,7 @@ const Checkout = ({shopCart, clearScore}) => {
                   <h3> ${totalitems * 240}</h3>
                 </div>
               </div>
-              <Link to="/"><button onClick={clearScore} className="checkoutbutton">Checkout</button></Link>
+              <Link to="/home"><button onClick={clearScore} className="checkoutbutton">Checkout</button></Link>
             </div>
           </div>
         </div>

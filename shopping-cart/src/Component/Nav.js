@@ -3,7 +3,7 @@ const Nav = ({ score }) => {
     return (
       <nav>
         <div className="rightnav">
-           <Link to="/"><h1>Home</h1></Link> 
+           <Link to="/home"><h1>Home</h1></Link> 
         </div>  
         <div className="leftnav">
             <Link to="/shop" className="shops">Shop</Link>
