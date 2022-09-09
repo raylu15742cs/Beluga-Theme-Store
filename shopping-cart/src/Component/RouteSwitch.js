@@ -19,12 +19,12 @@ const RouteSwitch = () => {
       console.log(shopCart)
     })
     return (
-      <BrowserRouter basename='/home'>
+      <BrowserRouter>
         <Nav score={score} setScore={updatescore}/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop  score={score} setScore={updatescore} setShopCart={setShopCart} shopCart={shopCart}/>} />
-          <Route path="/checkout" element={<Checkout shopCart={shopCart} clearScore={clearScore} />} />
+          <Route path="odin-shopping-cart/" element={<Home />} />
+          <Route path="odin-shopping-cart/shop" element={<Shop  score={score} setScore={updatescore} setShopCart={setShopCart} shopCart={shopCart}/>} />
+          <Route path="odin-shopping-cart/checkout" element={<Checkout shopCart={shopCart} clearScore={clearScore} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

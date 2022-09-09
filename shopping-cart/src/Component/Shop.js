@@ -32,7 +32,7 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
           <option value="12">12</option>
         </select>
         <button onClick={test}>Add to Cart</button>
-        <Link to="/checkout">
+        <Link to="odin-shopping-cart/checkout">
           <button>Check out</button>
         </Link>
       </div>
