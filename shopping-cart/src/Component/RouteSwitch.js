@@ -19,7 +19,7 @@ const RouteSwitch = () => {
       console.log(shopCart)
     })
     return (
-      <BrowserRouter>
+      <BrowserRouter basename='/home'>
         <Nav score={score} setScore={updatescore}/>
         <Routes>
           <Route path="/" element={<Home />} />
