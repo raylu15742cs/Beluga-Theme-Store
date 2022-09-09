@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3e9cec3.css",
+    "main.js": "/static/js/main.b2e6ad46.js",
+    "static/media/beluga.png": "/static/media/beluga.a174ad0360d23ebe6e5a.png",
+    "index.html": "/index.html",
+    "main.e3e9cec3.css.map": "/static/css/main.e3e9cec3.css.map",
+    "main.b2e6ad46.js.map": "/static/js/main.b2e6ad46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3e9cec3.css",
+    "static/js/main.b2e6ad46.js"
+  ]
+}
