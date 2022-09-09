@@ -86,7 +86,7 @@ a:any-link {
 .shop {
     display: flex;
     margin-top: 10vh;
-    justify-content: center;
+    padding-left: 15vh;
     gap: 40px;
 }
 .shop img{
@@ -94,10 +94,6 @@ a:any-link {
 }
 .shopinside {
     padding-top: 10vh;
-}
-select {
-    margin-top: 5vh;
-    margin-right: 20px;
 }
 .empty {
     height: 73vh;
@@ -146,4 +142,13 @@ select {
 
 .checkoutimage {
     height: 100px;
+}
+
+.shopinside h1, .shopinside h3 , .shopinside p {
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+select , .shopinside button {
+    margin-right: 10px
 }

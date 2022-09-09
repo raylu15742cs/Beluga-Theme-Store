@@ -31,10 +31,10 @@ const Checkout = ({shopCart, clearScore}) => {
                 <h3> Total </h3>
               </div>
               <div className="righttotal">
-                <p className="righttotalfirst"> 230</p>
+                <p className="righttotalfirst"> 240</p>
                 <p> {totalitems}</p>
                 <p> Free</p>
-                <p> ${totalitems * 230}</p>
+                <p> ${totalitems * 240}</p>
               </div>
             </div>
             <button onClick={clearScore} className="checkoutbutton"> <Link to="/" >Checkout</Link></button>

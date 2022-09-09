@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
   const test = () => {
@@ -15,15 +15,26 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
       <img src={require(`../img/beluga.png`)} alt="beluga"></img>
       <div className="shopinside">
         <h1>Yeezy Beluga 350 V2</h1>
+        <h3>Product Description</h3>
+        <p> One of Yeezy's most celebrated designs received a reflective makeover with the adidas Yeezy Boost 350 V2 Beluga Reflective.</p>
+        <p>The adidas Yeezy Boost 350 V2 Beluga Reflective builds off of the original Beluga colorway by adding reflective qualities and speckled orange accents to its Primeknit upper. Signature details like a Boost sole and orange side stripe complete the design.</p>
+        <p>The adidas Yeezy Boost 350 V2 Beluga Reflective released in December of 2021 and retailed for $240.</p>
+        <h3>Price: $240</h3>
         <select id="language">
+          <option value="4">4</option>
           <option value="5">5</option>
           <option value="6">6</option>
           <option value="7">7</option>
           <option value="8">8</option>
           <option value="9">9</option>
           <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
         </select>
         <button onClick={test}>Add to Cart</button>
+        <Link to="/checkout">
+          <button>Check out</button>
+        </Link>
       </div>
     </div>
   );
