@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e3e9cec3.css",
-    "main.js": "/static/js/main.af517e24.js",
+    "main.css": "/static/css/main.89af7884.css",
+    "main.js": "/static/js/main.bac5a0e1.js",
     "static/media/beluga.png": "/static/media/beluga.a174ad0360d23ebe6e5a.png",
     "index.html": "/index.html",
-    "main.e3e9cec3.css.map": "/static/css/main.e3e9cec3.css.map",
-    "main.af517e24.js.map": "/static/js/main.af517e24.js.map"
+    "main.89af7884.css.map": "/static/css/main.89af7884.css.map",
+    "main.bac5a0e1.js.map": "/static/js/main.bac5a0e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3e9cec3.css",
-    "static/js/main.af517e24.js"
+    "static/css/main.89af7884.css",
+    "static/js/main.bac5a0e1.js"
   ]
 }
