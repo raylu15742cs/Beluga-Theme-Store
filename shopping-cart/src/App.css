@@ -59,7 +59,7 @@ a:any-link {
     display: flex;
     justify-content: center;
     padding-top: 10vh;
-    gap: 10vw;
+    gap: 5vw;
 }
 
 .footer {
@@ -87,6 +87,7 @@ a:any-link {
     display: flex;
     margin-top: 10vh;
     justify-content: center;
+    gap: 40px;
 }
 .shop img{
     height: 40vh;
@@ -96,7 +97,7 @@ a:any-link {
 }
 select {
     margin-top: 5vh;
-    margin-right: 5vh;
+    margin-right: 20px;
 }
 .empty {
     height: 73vh;
@@ -106,16 +107,21 @@ select {
 }
 
 .item {
-    height: 200px;
-    width: 800px;
-    border: 2px solid black;
+    display: flex;
+    height: 120px;
+    width: 600px;
+    border: 2px solid #aeaeae;
     margin: 20px 0;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 30px;
+    gap: 10px;
 }
 
 .total {
     width: 170px;
     height: 200px;
-    border: 2px solid black;
+    border: 2px solid #aeaeae;
     margin-top : 30px;
     display: flex;
     padding: 10px;
@@ -136,4 +142,8 @@ select {
     height: 50px;
     width: 200px;
     font-size: 30px;
+}
+
+.checkoutimage {
+    height: 100px;
 }

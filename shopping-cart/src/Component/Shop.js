@@ -6,7 +6,7 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
     var value = select.options[select.selectedIndex].value;
     console.log(`beluga ${value}`)
 
-    setShopCart({...shopCart , [score] : ["beluga", value]})
+    setShopCart({...shopCart , [score] : ["Beluga", value]})
     setScore()
 
   }

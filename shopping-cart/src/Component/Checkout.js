@@ -10,9 +10,13 @@ const Checkout = ({shopCart, clearScore}) => {
             {Object.keys(shopCart).map((key, i) => {
               return (
                 <div className="item">
-                  <h1 key={key}>
-                    {shopCart[key][0]} size : {shopCart[key][1]}
-                  </h1>
+                  <img class="checkoutimage" src={require(`../img/beluga.png`)} alt="beluga"></img>
+                  <div> 
+                    <h1>{shopCart[key][0]}</h1>
+                  <p key={key}>
+                     Size : {shopCart[key][1]}
+                  </p>
+                  </div>
                 </div>
               );
             })}
