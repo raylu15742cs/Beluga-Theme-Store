@@ -10,34 +10,38 @@ const Checkout = ({shopCart, clearScore}) => {
             {Object.keys(shopCart).map((key, i) => {
               return (
                 <div className="item">
-                  <img class="checkoutimage" src={require(`../img/beluga.png`)} alt="beluga"></img>
-                  <div> 
+                  <img
+                    class="checkoutimage"
+                    src={require(`../img/beluga.png`)}
+                    alt="beluga"
+                  ></img>
+                  <div>
                     <h1>{shopCart[key][0]}</h1>
-                  <p key={key}>
-                     Size : {shopCart[key][1]}
-                  </p>
+                    <p key={key}>Size : {shopCart[key][1]}</p>
                   </div>
                 </div>
               );
             })}
           </div>
-          <div>
-            <div className="total">
-              <div className="lefttotal">
-                <h3> Order Summary</h3>
-                <p> Original Price</p>
-                <p> Number Items</p>
-                <p> Deliver </p>
-                <h3> Total </h3>
+          <div className="total">
+            <div className="totalz">
+              <h2> Order Summary</h2>
+              <div className="totals">
+                <div className="lefttotal">
+                  <p> Original Price</p>
+                  <p> Number Items</p>
+                  <p> Deliver </p>
+                  <h3> Total </h3>
+                </div>
+                <div className="righttotal">
+                  <p className="righttotalfirst"> 240</p>
+                  <p> {totalitems}</p>
+                  <p> Free</p>
+                  <h3> ${totalitems * 240}</h3>
+                </div>
               </div>
-              <div className="righttotal">
-                <p className="righttotalfirst"> 240</p>
-                <p> {totalitems}</p>
-                <p> Free</p>
-                <p> ${totalitems * 240}</p>
-              </div>
+              <Link to="/"><button onClick={clearScore} className="checkoutbutton">Checkout</button></Link>
             </div>
-            <button onClick={clearScore} className="checkoutbutton"> <Link to="/" >Checkout</Link></button>
           </div>
         </div>
       );

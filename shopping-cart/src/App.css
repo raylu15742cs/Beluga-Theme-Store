@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
     
 }
 body {
@@ -55,7 +56,7 @@ a:any-link {
     height: 83vh;
 }
 .checkout {
-    min-height: 83vh;
+    min-height: 93vh;
     display: flex;
     justify-content: center;
     padding-top: 10vh;
@@ -115,29 +116,29 @@ a:any-link {
 }
 
 .total {
-    width: 170px;
-    height: 200px;
+    width: 400px;
+    height: 160px;
     border: 2px solid #aeaeae;
-    margin-top : 30px;
-    display: flex;
-    padding: 10px;
+    margin-top : 60px;
+    gap: 220px;
 }
 .righttotal {
     text-align: end;
 }
 .total h3 , .total p {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.righttotalfirst {
-    margin-top: calc(1.17em + 21px);
-}
 
 .checkoutbutton {
     margin-top: 20px;
     height: 50px;
-    width: 200px;
-    font-size: 30px;
+    width: 400px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #666362;
+    color:#e3e3e3;
 }
 
 .checkoutimage {
@@ -151,4 +152,15 @@ a:any-link {
 
 select , .shopinside button {
     margin-right: 10px
+}
+
+.totals {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.totalz h2 {
+    padding-left: 10px;
+    padding-top: 10px;
 }
