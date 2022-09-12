@@ -1,2 +1,2 @@
-# odin-shopping-cart
-https://raylu15742cs.github.io/odin-shopping-cart/
+# Beluga Theme Store
+https://raylu15742cs.github.io/Beluga-Theme-Store/
