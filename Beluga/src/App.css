@@ -87,8 +87,8 @@ a:any-link {
 .shop {
     display: flex;
     margin-top: 10vh;
-    padding-left: 15vh;
-    gap: 40px;
+    justify-content: center;
+    gap: 10vw;
 }
 .shop img{
     height: 40vh;
