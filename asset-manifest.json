@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Beluga-Theme-Store/static/css/main.2d498073.css",
+    "main.css": "/Beluga-Theme-Store/static/css/main.088d57e3.css",
     "main.js": "/Beluga-Theme-Store/static/js/main.492212b9.js",
     "static/media/beluga.png": "/Beluga-Theme-Store/static/media/beluga.a174ad0360d23ebe6e5a.png",
     "index.html": "/Beluga-Theme-Store/index.html",
-    "main.2d498073.css.map": "/Beluga-Theme-Store/static/css/main.2d498073.css.map",
+    "main.088d57e3.css.map": "/Beluga-Theme-Store/static/css/main.088d57e3.css.map",
     "main.492212b9.js.map": "/Beluga-Theme-Store/static/js/main.492212b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d498073.css",
+    "static/css/main.088d57e3.css",
     "static/js/main.492212b9.js"
   ]
 }
