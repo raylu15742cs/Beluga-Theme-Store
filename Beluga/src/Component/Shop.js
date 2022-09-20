@@ -16,7 +16,7 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
     <div className="shop">
       <Carousel cols={1} rows={1} loop>
         <Carousel.Item>
-          <img src={require(`../img/beluga.png`)} alt="beluga"></img>
+          <img src={require(`../img/beluga_left.webp`)} alt="beluga"></img>
         </Carousel.Item>
         <Carousel.Item>
           <img src={require(`../img/beluga.png`)} alt="beluga"></img>
