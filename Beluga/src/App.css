@@ -88,10 +88,11 @@ a:any-link {
     display: flex;
     margin-top: 10vh;
     justify-content: center;
-    gap: 10vw;
+    gap: 5vw;
 }
 .shop img{
-    height: 40vh;
+    width: 40vw;
+    padding: 2vw;
 }
 .shopinside {
     padding-top: 10vh;
@@ -163,4 +164,8 @@ select , .shopinside button {
 .totalz h2 {
     padding-left: 10px;
     padding-top: 10px;
+}
+
+.fPimMH {
+    width: 40vw;
 }
