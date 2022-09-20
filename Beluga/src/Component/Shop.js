@@ -19,7 +19,7 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
           <img src={require(`../img/beluga_left.webp`)} alt="beluga"></img>
         </Carousel.Item>
         <Carousel.Item>
-          <img src={require(`../img/beluga.png`)} alt="beluga"></img>
+          <img className="belugaright" src={require(`../img/beluga_right.png`)} alt="beluga"></img>
         </Carousel.Item>
         <Carousel.Item>
           <img src={require(`../img/beluga.png`)} alt="beluga"></img>
