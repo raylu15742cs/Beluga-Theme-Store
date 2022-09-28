@@ -42,3 +42,152 @@ a:any-link {
     right: 41px;
 }
 
+/* style for home page */ 
+.home {
+    min-height: 93vh;
+    display: flex;
+    padding-top: 20vh;
+    gap: 5vw;
+    justify-content: center;
+}
+.belugaimg {
+    height: 30vh;
+}
+.leftsidehome {
+    padding-top: 11vh;
+}
+
+.home h1 {
+    font-size: 50px;
+    margin-bottom: 2vh;
+}
+
+.home button {
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 10px;
+} 
+/* style for shop page */ 
+.shop {
+    height: 83vh;
+    display: flex;
+    margin-top: 10vh;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.shop img{
+    width: 40vw;
+    padding: 2vw;
+}
+.shopinside {
+    padding-top: 10vh;
+}
+
+.shopinside h1, .shopinside h3 , .shopinside p {
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+select , .shopinside button {
+    margin-right: 10px
+}
+/* style for checkout page */ 
+
+.checkout {
+    min-height: 93vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    gap: 5vw;
+}
+
+.empty {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+.item {
+    display: flex;
+    height: 120px;
+    width: 600px;
+    border: 2px solid #aeaeae;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.totals {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.totalz h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.total {
+    width: 400px;
+    height: 160px;
+    border: 2px solid #aeaeae;
+    margin-top : 60px;
+    gap: 220px;
+}
+.righttotal {
+    text-align: end;
+}
+.total h3 , .total p {
+    margin-top: 10px;
+}
+
+
+.checkoutbutton {
+    margin-top: 20px;
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #666362;
+    color:#e3e3e3;
+}
+
+.checkoutimage {
+    height: 100px;
+}
+
+/* style for  footer */ 
+
+.footer {
+    min-height: 2vh;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+/* style for image carousel */
+.fPimMH {
+    width: 40vw;
+}
+
+.belugaright {
+    margin-top: 100px;
+}
+
+nav a h1 , .leftnav .shops{
+    transition: all 0.5s ease-out;
+}
+
+nav a h1:hover , .leftnav .shops:hover {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
