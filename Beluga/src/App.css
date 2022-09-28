@@ -1,11 +1,14 @@
 * {
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 body {
     background-color: #e3e3e3;
 }
+
+/* styles for nav bar */ 
+
+
 nav {
     display: flex;
     align-items: center;
@@ -39,12 +42,7 @@ a:any-link {
     right: 41px;
 }
 
-.belugaimg {
-    height: 30vh;
-}
-.leftsidehome {
-    padding-top: 11vh;
-}
+/* style for home page */ 
 .home {
     min-height: 93vh;
     display: flex;
@@ -52,25 +50,12 @@ a:any-link {
     gap: 5vw;
     justify-content: center;
 }
-.shop {
-    height: 83vh;
+.belugaimg {
+    height: 30vh;
 }
-.checkout {
-    min-height: 93vh;
-    display: flex;
-    justify-content: center;
-    padding-top: 10vh;
-    gap: 5vw;
+.leftsidehome {
+    padding-top: 11vh;
 }
-
-.footer {
-    min-height: 2vh;
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
 
 .home h1 {
     font-size: 50px;
@@ -83,13 +68,16 @@ a:any-link {
     font-size: 20px;
     font-weight: bolder;
     border-radius: 10px;
-}   
+} 
+/* style for shop page */ 
 .shop {
+    height: 83vh;
     display: flex;
     margin-top: 10vh;
     justify-content: center;
     gap: 5vw;
 }
+
 .shop img{
     width: 40vw;
     padding: 2vw;
@@ -97,13 +85,31 @@ a:any-link {
 .shopinside {
     padding-top: 10vh;
 }
+
+.shopinside h1, .shopinside h3 , .shopinside p {
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+select , .shopinside button {
+    margin-right: 10px
+}
+/* style for checkout page */ 
+
+.checkout {
+    min-height: 93vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    gap: 5vw;
+}
+
 .empty {
     height: 93vh;
     display: flex;
     justify-content: center;
     padding-top: 20vh;
 }
-
 .item {
     display: flex;
     height: 120px;
@@ -114,6 +120,17 @@ a:any-link {
     border-radius: 20px;
     padding-left: 30px;
     gap: 10px;
+}
+
+.totals {
+    display: flex;
+    width: 390px;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.totalz h2 {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .total {
@@ -146,26 +163,16 @@ a:any-link {
     height: 100px;
 }
 
-.shopinside h1, .shopinside h3 , .shopinside p {
-    margin-bottom: 10px;
-    max-width: 400px;
-}
+/* style for  footer */ 
 
-select , .shopinside button {
-    margin-right: 10px
-}
-
-.totals {
+.footer {
+    min-height: 2vh;
     display: flex;
-    width: 390px;
-    justify-content: space-between;
-    padding-left: 10px;
-}
-.totalz h2 {
-    padding-left: 10px;
-    padding-top: 10px;
-}
 
+    align-items: center;
+    justify-content: center;
+}
+/* style for image carousel */
 .fPimMH {
     width: 40vw;
 }
