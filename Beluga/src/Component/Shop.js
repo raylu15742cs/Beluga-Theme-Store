@@ -6,7 +6,7 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
   const test = () => {
     let select = document.getElementById("language")
     var value = select.options[select.selectedIndex].value;
-    console.log(`beluga ${value}`)
+    console.log(shopCart)
 
     setShopCart({...shopCart , [score] : ["Beluga", value]})
     setScore()
@@ -19,7 +19,11 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
           <img src={require(`../img/beluga_left.webp`)} alt="beluga"></img>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="belugaright" src={require(`../img/beluga_right.png`)} alt="beluga"></img>
+          <img
+            className="belugaright"
+            src={require(`../img/beluga_right.png`)}
+            alt="beluga"
+          ></img>
         </Carousel.Item>
         <Carousel.Item>
           <img src={require(`../img/beluga.png`)} alt="beluga"></img>
@@ -56,9 +60,11 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
           <option value="12">Size 12</option>
         </select>
         <button onClick={test}>Add to Cart</button>
-        <Link to="/checkout">
-          <button>Check out</button>
-        </Link>
+        {shopCart[0] && (
+          <Link to="/checkout">
+            <button>Check out</button>
+          </Link>
+        )}
       </div>
     </div>
   );

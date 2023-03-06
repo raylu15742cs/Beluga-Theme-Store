@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Checkout = ({shopCart, clearScore}) => {
+  const [popup, setPopup] = useState(false);
+
+  const checkoutTime = () => {
+    setPopup(true)
+  }
   if(Object.keys(shopCart).length >= 1) {
     let totalitems =  Object.keys(shopCart).length 
       return (
@@ -40,9 +46,16 @@ const Checkout = ({shopCart, clearScore}) => {
                   <h3> ${totalitems * 240}</h3>
                 </div>
               </div>
-              <Link to="/"><button onClick={clearScore} className="checkoutbutton">Checkout</button></Link>
+              <button onClick={checkoutTime} className="checkoutbutton">Checkout</button>
             </div>
           </div>
+          { popup ? (
+            <div>
+              <h1>Checkout is currently not available</h1>
+            </div>
+          ) : ""
+
+          }
         </div>
       );
     
