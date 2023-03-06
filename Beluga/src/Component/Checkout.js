@@ -46,16 +46,21 @@ const Checkout = ({shopCart, clearScore}) => {
                   <h3> ${totalitems * 240}</h3>
                 </div>
               </div>
-              <button onClick={checkoutTime} className="checkoutbutton">Checkout</button>
+              <button onClick={checkoutTime} className="checkoutbutton">
+                Checkout
+              </button>
             </div>
           </div>
-          { popup ? (
+          {popup ? (
             <div>
               <h1>Checkout is currently not available</h1>
+              <Link to="/">
+                <button onClick={clearScore}>Return to Home</button>
+              </Link>
             </div>
-          ) : ""
-
-          }
+          ) : (
+            ''
+          )}
         </div>
       );
     
