@@ -45,15 +45,15 @@ const Shop = ( { score, shopCart, setShopCart ,setScore} ) => {
         </p>
         <h3>Price: $240</h3>
         <select id="language">
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
+          <option value="4">Size 4</option>
+          <option value="5">Size 5</option>
+          <option value="6">Size 6</option>
+          <option value="7">Size 7</option>
+          <option value="8">Size 8</option>
+          <option value="9">Size 9</option>
+          <option value="10">Size 10</option>
+          <option value="11">Size 11</option>
+          <option value="12">Size 12</option>
         </select>
         <button onClick={test}>Add to Cart</button>
         <Link to="/checkout">

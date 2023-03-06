@@ -188,6 +188,9 @@ nav a h1 , .leftnav .shops{
 nav a h1:hover , .leftnav .shops:hover {
     background-color: black;
     color: white;
-    padding: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
+}
+
+nav a h1 , .leftnav .shops {
+    padding: 10px;
 }
